@@ -23,7 +23,16 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v
 runas /user:lucas cmd
 ```
 
+### NMAP Command
 
+1. Common ports 
+```CMD
+nmap -sS -P0  -A -oA 192.168.100.1 -T4 192.168.100.1
+```
 
+2. Full ports
+```CMD
+ nmap -sS -P0 -p- -A -oA 192.168.100.1.log -T4 192.168.100.1
+```
 
 
