@@ -1,3 +1,7 @@
+###Check whether the Target is protected using WAF
+```sh
+wafw00f www.test.com
+```
 
 ### Windows Commands
 
